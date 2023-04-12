@@ -63,9 +63,32 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
-input("кол-во долек:")
-n,m,k = map ( int , input().split())
+# input("кол-во долек:")
+# n,m,k = map ( int , input().split())
+# if k%m==0:
+#     print("yes")
+# else: print("no")
 
-if k%m==0:
-    print("yes")
-else: print("no")
+
+# Задача 10
+# На столе лежат n монеток. Некоторые из них лежат вверх
+# решкой, а некоторые – гербом. Определите минимальное 
+# число монеток, которые нужно перевернуть, чтобы все 
+# монетки были повернуты вверх одной и той же стороной. 
+# Выведите минимальное количество монет, кот нужно 
+# перевернуть.
+# 5 -> 1 0 1 1 0
+# 2
+
+n = int(input("количество монеток: "))
+sum1 = 0
+sum2 = 0
+import random
+items = [random.randint(0, 1) for i in range(n)]
+print(items)
+for i in range(n):
+    if items[i] ==1: sum1=sum1+1
+    else: sum2 = sum2+1
+if sum1<sum2: print(sum1)
+else:print (sum2)
+
