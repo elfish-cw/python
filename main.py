@@ -80,15 +80,36 @@
 # 5 -> 1 0 1 1 0
 # 2
 
-n = int(input("количество монеток: "))
-sum1 = 0
-sum2 = 0
-import random
-items = [random.randint(0, 1) for i in range(n)]
-print(items)
-for i in range(n):
-    if items[i] ==1: sum1=sum1+1
-    else: sum2 = sum2+1
-if sum1<sum2: print(sum1)
-else:print (sum2)
+# n = int(input("количество монеток: "))
+# sum1 = 0
+# sum2 = 0
+# import random
+# items = [random.randint(0, 1) for i in range(n)]
+# print(items)
+# for i in range(n):
+#     if items[i] ==1: sum1=sum1+1
+#     else: sum2 = sum2+1
+# if sum1<sum2: print(sum1)
+# else:print (sum2)
 
+
+# Задача 12
+# Петя помогает Кате по математике. Он 
+# задумывает два натуральных числа X и Y (X,Y≤1000), 
+# а Катя должна их отгадать. Для этого Петя делает две 
+# подсказки. Он называет сумму этих чисел S и их
+# произведение P. Помогите Кате отгадать числа.
+# 4 4 -> 2 2
+# 5 6 -> 2 3
+
+p = int(input("произведение двух чисел: "))
+if p > 1000000:
+    p = int(input("произведение двух чисел <= 1000000: "))
+s = int(input("сумма этих чисел: "))
+if s > 2000:
+    s = int(input("сумма этих чисел <= 2000: "))
+import math
+d = math.sqrt(s**2 - 4*p)
+r1 = (s + d)/2
+r2 = (s - d)/2
+print(int(r1),int(r2))
