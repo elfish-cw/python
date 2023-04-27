@@ -57,14 +57,13 @@
 # ":" S007 "}]
 # Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
 
-# a = {"V": "S001", "V": "S002", "VI": "S001", "VI": "S005", "VII": "S005", "V":"S009", "VIII":"S007"}
-# d = []
-# for i in a:
-#     print(i)
-#     for j in i:
-#         print(j)
-#         d.append(i[j])  
-# print(set(d))
+a = [{"V": "S001"}, {"V": "S002"},{"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, {"V":"S009"}, {"VIII":"S007"}]
+d = []
+for i in a:
+    for v in i:
+        d.append(i[v])
+
+print(set(d))
 
 
 
