@@ -203,15 +203,25 @@
 # Вывод:
 # 12
 
-dictionary = {'А, В, Е, И, Н, О, Р, С, Т' : 1, "Д, К, Л, М, П, У" : 2, "Б, Г, Ё, Ь, Я" : 3, "Й, Ы" : 4, "Ж, З, Х, Ц, Ч" : 5, "Ш, Э, Ю" : 8, "Ф, Щ, Ъ" : 10}
+# dictionary = {'А, В, Е, И, Н, О, Р, С, Т' : 1, "Д, К, Л, М, П, У" : 2, "Б, Г, Ё, Ь, Я" : 3, "Й, Ы" : 4, "Ж, З, Х, Ц, Ч" : 5, "Ш, Э, Ю" : 8, "Ф, Щ, Ъ" : 10}
 
 
-word = str(input('введите слово:'))
-a = [i for i in word]
-result = 0
-for j in a:
-    for k in dictionary:
-        if j in k:
-             result+=dictionary[k]
-             break   
-print(result)
+# word = str(input('введите слово:'))
+# a = [i for i in word]
+# result = 0
+# for j in a:
+#     for k in dictionary:
+#         if j in k:
+#              result+=dictionary[k]
+#              break   
+# print(result)
+
+# list_word = {1:'А, В, Е, И, Н, О, Р, С, Т', 2:'Д, К, Л, М, П, У', 3:  }
+# sum = 0
+# for i in word:
+#     for k,v in list_word.items():
+#         if i in v:
+#             summ+=k
+# print(f'сумма баллов в слове = {sum}')
+
+

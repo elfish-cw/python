@@ -57,13 +57,13 @@
 # ":" S007 "}]
 # Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
 
-a = [{"V": "S001"}, {"V": "S002"},{"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, {"V":"S009"}, {"VIII":"S007"}]
-d = []
-for i in a:
-    for m in i:
-        d.append(i[m])
+# a = [{"V": "S001"}, {"V": "S002"},{"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, {"V":"S009"}, {"VIII":"S007"}]
+# d = []
+# for i in a:
+#     for m in i:
+#         d.append(i[m])
 
-print(set(d))
+# print(set(d))
 
 
 
@@ -86,6 +86,77 @@ print(set(d))
 #     i+=1
 
 # print(count)
+
+
+
+
+
+
+
+# Задача №25. 
+# Напишите программу, которая принимает на вход
+# строку, и отслеживает, сколько раз каждый символ
+# уже встречался. Количество повторов добавляется к
+# символам с помощью постфикса формата _n.
+# Input: a a a b c a a d c d d
+# Output: a a_1 a_2 b c a_3 a_4 d c_1 d_1 d_2
+
+# a = str(input())
+# a = a.split()
+# print(a)
+# count=0
+# count_temp=0
+# b=str(f'{a[0]}')
+# temp=a[0]
+# for j in range(1,len(a)):
+#     if a[j]==a[j-1]:
+#         count+=1
+#         b=b+str(f' {a[j]}_{count}')
+#         temp = a[j-1]
+#         count_temp=count
+#     elif a[j]==temp:
+#         count_temp+=1
+#         b=b+str(f' {a[j]}_{count_temp}')
+#         count = count_temp
+#     else: 
+#         count=0 
+#         b=b+str(f' {a[j]}')
+             
+# print(b)
+
+
+# a = ('a a a b c a a d c d d').split()
+# res={}
+# a_res =[]
+# for i in a:
+#     if i not in res:
+#         res[i] = 0
+#         print (i, end = ' ')
+#     else:
+#         res[i]+=1
+#         print(i,'_',res[i], end = " ")
+list = """ She sells sea shells on the sea shore 
+The shells that she sells are sea shells 
+I'm sure.So if she sells sea
+shells on the sea shore 
+I'm sure that the shells are sea
+shore shells"""
+print(len(set(list.upper().replace('.', ' ').split())))
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
