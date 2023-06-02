@@ -135,25 +135,110 @@
 #     else:
 #         res[i]+=1
 #         print(i,'_',res[i], end = " ")
-list = """ She sells sea shells on the sea shore 
-The shells that she sells are sea shells 
-I'm sure.So if she sells sea
-shells on the sea shore 
-I'm sure that the shells are sea
-shore shells"""
-print(len(set(list.upper().replace('.', ' ').split())))
+# list = """ She sells sea shells on the sea shore 
+# The shells that she sells are sea shells 
+# I'm sure.So if she sells sea
+# shells on the sea shore 
+# I'm sure that the shells are sea
+# shore shells"""
+# print(len(set(list.upper().replace('.', ' ').split())))
 
 
+# Задача 33.
+# Хакер Василий получил доступ к классному журналу и
+# хочет заменить все свои минимальные оценки на
+# максимальные. Напишите программу, которая
+# заменяет оценки Василия, но наоборот: все
+# максимальные – на минимальные.
+# Input: 5 -> 1 3 3 3 4
+# Output: 1 3 3 3 1
+
+# from random import randint
+
+# num = int(input('Введите количество оценок'))
+# listOcenok = [randint(1,5) for i in range(num)]
+
+# print(*listOcenok)
+
+# newspisok = []
+# for el in listOcenok:
+#     if el==max(listOcenok):
+#         newspisok.append(min(listOcenok))
+#     else:
+#         newspisok.append(el)
+
+# print(newspisok)
+
+
+
+# Задача 30. Факториал
+
+# n = int(input('Введите n:'))
+
+# def fact(n):
+#     if n==0:
+#         return 1
+#     else:
+#         return fact(n-1)*n
+    
+# print(fact(n))
 
 
 
     
 
+# Задача 31.
+# Последовательностью Фибоначчи называется
+# последовательность чисел a0, a1, ..., an, 
+# ..., где a0 = 0, a1 = 1, ak = ak-1 + ak-2 (k > 1).
+# Требуется найти N-е число Фибоначчи
+# Input: 7
+# Output: 21
+
+    
+# n = int(input("введите число n:"))
+# def fibbo(n):
+#         if n==0:
+#             return 0
+#         elif n==1:
+#             return 1
+#         else: 
+#             return fibbo(n-1)+fibbo(n-2) 
+# print(fibbo(n))
 
 
 
 
 
+
+
+# Задача 35
+# Напишите функцию, которая принимает одно число и
+# проверяет, является ли оно простым
+# Напоминание: Простое число - это число, которое
+# имеет 2 делителя: 1 и n (само число)
+# Input: 5
+# Output: yes 
+
+
+n = int(input("введите число n:"))
+def simplecheck(n):
+                # if n%(n-1)==0:
+                #         return print ("yes")
+                # elif n!=2:
+                #         n=n-1
+                #         simplecheck(n)
+                # else:
+                #         return print ("no")
+                   if n%(n-1)==0:
+                        return print ("yes")
+                    elif n!=2:
+                            n=n-1
+                            simplecheck(n)
+                    else:
+                            return print ("no")
+
+simplecheck(n)
 
 
 
@@ -174,6 +259,8 @@ print(len(set(list.upper().replace('.', ' ').split())))
 # list2 = [4, 15, 43, 1, 15, 1]
 # l2=set(list2)
 # print(l1.difference(l2))
+
+
 
 # Даны два массива чисел. Требуется вывести те 
 # элементы первого массива (в том порядке, в каком 
